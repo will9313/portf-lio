@@ -1,0 +1,320 @@
+/**********
+/* Grille - 960.gs
+**********/
+.container {
+	max-width: 960px;
+	width: 92%;
+	margin: 0 auto;
+}
+.grid_6,
+.grid_8,
+.grid_10,
+.grid_16 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.container .grid_6 {
+	width:35.5%;
+}
+
+.container .grid_8 {
+	width:48.0%;
+}
+
+.container .grid_10 {
+	width:60.5%;
+}
+
+.container .grid_16 {
+	width:98.0%;
+}
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+/**********
+/* Header
+**********/
+	header[role=banner] {
+		background:lightblue;
+		border-bottom:4px solid #33a4c9;
+		padding: 5px 0;
+		overflow: hidden;
+	}
+	
+	header figure {
+		border: 3px solid #eee;
+		border-radius: 100px;
+		float: left;
+		height: 206px;
+		width: 188px;
+	}
+	
+	header figure img {
+		border-radius: 100px;
+		height: 200px;
+		position: relative;
+		width: 180px;
+	}
+	
+	header hgroup {
+		float: right;
+		padding: 42px 0;
+	}
+	
+	header hgroup h1 {
+		color:black;
+		font-family:'DroidSansBold', Arial, sans-serif;
+	}
+	
+	header hgroup h2 {
+		color:black;
+		font-style: italic;
+		text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+	}
+
+    /*footer[role=banner] {
+		background:lightblue;
+        text-align: center;
+		border-bottom:4px solid #33a4c9;
+		padding: 5px 0;
+		overflow: hidden;
+	}*/
+
+    .footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: lightblue;
+        color: black;
+        text-align: center;
+        font-family:'DroidSansBold', Arial, sans-serif;
+        border-top:4px solid #33a4c9;
+    }
+
+
+/***************
+/* Corpo
+***************/
+	section[role=main] {
+		padding: 21px 0;
+		overflow: hidden;
+	}
+	
+	section[role=main] > div {
+		margin-top: 63px;
+	}
+	
+	section[role=main] h3 {
+		border-bottom: 1px solid #e1e1e1;
+		padding: 0 0 20px 60px;
+		margin-top: 0px;
+		position: relative;
+ 	}
+	section[role=main] p {
+		text-align: justify; 
+	}
+	
+	section[role=main] h3:after, h3:before {
+		content: ' ';
+		display: block;
+		height: 50px;
+		left: 0;
+		position: absolute;
+		top: -15px;
+		width: 50px;
+	}
+	
+		
+		section[role=main] h3:after {
+			background:url('../img/pictos-titre.png') no-repeat 11px 10px;
+		}
+		
+		section[role=main] .Conhecimentos h3:after {
+			background-position: 11px -34px;
+		}
+	
+		section[role=main] .Experiencias h3:after {
+			background-position: 11px -86px;
+		}
+		
+		section[role=main] .formacao h3:after {
+			background-position: 10px -139px;
+		}
+		
+		section[role=main] .loisirs h3:after {
+			background-position: 10px -250px;
+		}
+		
+	
+	
+	.Experiências Profissionais ul, .formacao ul {
+		margin-left: 60px;
+	}
+	
+	section[role=main] h4 {
+		margin-bottom: 0px;
+	}
+	
+	section[role=main] h4 strong {
+		color: #147393;
+		font-weight: normal;
+	}
+	
+	.Experiências Profissionais li, .formacao li {
+		margin-bottom: 63px;
+	}
+	
+	.Experiências Profissionais li:last-child, .formacao li:last-child {
+		margin-bottom: 21px;
+	}
+	
+	.Experiências Profissionais li p, .formacao li p {
+		margin-left: 30px;
+	}
+	
+	
+	.Conhecimentos .tags li {
+		background-color:#33a4c9;
+		border:1px solid #1b91b7;
+		border-radius: 15px;
+		color:#fff;
+		display: inline-block;
+		line-height: 13px;
+		margin: 0 7px 17px 0;
+		padding: 5px 10px;
+	}
+	
+	
+	.Conhecimentos .barres li {
+		margin-bottom: 21px;
+		position: relative;
+	}
+	
+	.Conhecimentos .barres li:after {
+		background: lightblue;
+		bottom: -4px;
+		content: ' ';
+		display: block;
+		height: 5px;
+		position: absolute;
+		width:100%;
+	}
+	
+	.Conhecimentos .barres li span {
+		background: #33a4c9;
+		bottom: -4px;
+		content: ' ';
+		display: block;
+		height: 5px;
+		left: 0;
+		position: absolute;
+		width: inherit;
+		z-index: 1;
+	}
+	body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 	Utilisation de la propriété "box-sizing".
+	Largeur d'un bloc = width + padding + border 
+*/
+	* {
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+/*	Modification de la couleur et couleur de fond
+	lors de la selection du contenu
+*/
+	::selection {
+		background: #ff9f39;
+		color: #fff;
+	}
+	
+	::-moz-selection {
+		background: #ff9f39;
+		color: #fff;
+	}
+	
+	body {
+	background: white;
+	color:#333;
+	font-family: 'DroidSansRegular', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+p, ul, h1, h2, h3, h4 {
+	margin: 21px 0;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 21px;
+}
+
+h4 {
+	font-size: 18px;
+	line-height:21px;
+}
+
+b,strong {
+	font-weight: bold;
+}
+html, body, div,header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+	
